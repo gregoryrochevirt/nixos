@@ -1,0 +1,15 @@
+# This is a generated file.  Do not edit!
+#
+# To make changes, edit the fileSystems and swapDevices NixOS options
+# in your /etc/nixos/configuration.nix file.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+
+# Filesystems.
+/dev/disk/by-uuid/3680cfcb-aee7-4dc5-a150-1fd8bc731a0f / ext4 x-initrd.mount 0 1
+/dev/disk/by-uuid/6ED3-D333 /boot vfat fmask=0077,dmask=0077 0 2
+storagedocker:/home/greg/docker /nfs/docker nfs x-systemd.automount,noauto 0 0
+
+
+# Swap devices.
+
