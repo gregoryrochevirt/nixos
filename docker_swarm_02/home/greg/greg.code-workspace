@@ -1,0 +1,78 @@
+{
+	"folders": [
+		{
+			"path": "/home/greg/"
+		},
+		{
+			"path": "/home/greg/docker/docker_workspaces_images"
+		},
+		{
+			"path": "/home/greg/docker/homedc_docker"
+		},
+		{
+			"path": "/home/greg/docker/homedc_docker_dev"
+		},
+		{
+			"path": "/nfs/docker/docker-secrets"
+		},
+		{
+			"path": "/nfs/docker/docker-volumes"
+		},
+		{
+			"path": "docker/doc_images"
+		}
+	],
+	"settings": {
+		
+		// Git
+    	"git.autofetch": true,
+    	"git.enableSmartCommit": true,
+    	"git.confirmSync": false,
+		
+		// Editor
+		"editor.suggestOnTriggerCharacters": false,
+    	"editor.quickSuggestions": {
+        	"other": "off",
+        	"comments": "off",
+        	"strings": "off"
+        	},
+    	"editor.parameterHints.enabled": true,
+		"editor.multiCursorModifier": "ctrlCmd",
+    	"diffEditor.hideUnchangedRegions.enabled": true,
+    	"workbench.editor.defaultBinaryEditor": "workbench.editor.chatSession",
+    	
+		// File
+		"files.autoSave": "afterDelay",
+
+		// Task
+    	"task.allowAutomaticTasks": "on",
+		"task.autoDetect": "on",
+
+		// Sync
+		//"settingsSync.ignoredExtensions": [],
+		"settingsSync.keybindingsPerPlatform": false,
+		"search.followSymlinks": false,
+		
+		// Terminal
+    	"terminal.integrated.scrollback": 100,
+    	"terminal.integrated.shellIntegration.history": 1000,
+		// in ~/.zshrc
+		// # BEGIN ANSIBLE MANAGED BLOCK
+		// if [[ $HISTCMD -eq 0 ]]; then
+		//   # we've just shelled in; "magically" cd into the vagrant shared folder
+		//   cd "/"
+		// fi
+		// # END ANSIBLE MANAGED BLOCK
+		"terminal.integrated.defaultProfile.linux": "bash",
+		"terminal.integrated.fontFamily": "'MesloLGS NF'",
+		"terminal.integrated.fontSize": 15,
+		"editor.fontFamily": "MesloLGS NF",
+		"workbench.iconTheme": "material-icon-theme"
+//		"editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+
+		//		"terminal.integrated.cwd": "/home/greg/docker/docker-compose",
+		//		"window.openFoldersInNewWindow": "on",
+		//    	"window.restoreWindows": "all"
+	},
+
+}

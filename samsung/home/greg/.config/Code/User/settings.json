@@ -1,0 +1,49 @@
+{
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "workbench.editor.defaultBinaryEditor": "workbench.editor.chatSession",
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.persistentSessionScrollback": 1000,
+    "terminal.integrated.scrollback": 100,
+    "terminal.integrated.shellIntegration.history": 1000,
+    "grunt.autoDetect": "on",
+    "terminal.integrated.defaultProfile.linux": "zsh (2)",
+    "editor.fontFamily": "'MesloLGS NF',Meslo LG M DZ Regular for Powerline,'Droid Sans Mono', 'monospace', monospace",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        },
+        "zsh (2)": {
+            "path": "/usr/bin/zsh"
+        }
+    },
+    "terminal.integrated.fontFamily": "Meslo LG M DZ Regular for Powerline",
+    "launch": {
+        "configurations": [
+        
+        ]
+    },
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto",
+    "settingsSync.keybindingsPerPlatform": false,
+    "search.followSymlinks": false,
+}

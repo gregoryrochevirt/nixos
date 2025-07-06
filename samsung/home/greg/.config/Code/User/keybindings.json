@@ -1,0 +1,128 @@
+// Place your key bindings in this file to override the defaults
+[
+// terminal and panel ctrl+alt+b
+    {
+        // disable default rule
+        "key": "ctrl+m",
+        "command": "-editor.action.toggleTabFocusMode"
+    },
+    {
+        // Open the terminal, if wasn't
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.togglePanel",
+        "when": "!terminalIsOpen"
+    },
+    {
+        // Hide the terminal, if editor is active
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.togglePanel",
+        "when": "terminalIsOpen && !terminalFocus"
+    },
+    {
+        // Maximize the terminal, if it's in the focus and editor is opened
+        "key": "ctrl+alt+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+            ]
+        },
+        "when": "terminalIsOpen && !editorFocus && !panelMaximized"
+    },
+    {
+        // Toggle the terminal and focus on editor, if terminal was maximazed
+        "key": "ctrl+alt+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleMaximizedPanel",
+                "workbench.action.focusActiveEditorGroup"
+            ]
+        },
+        "when": "terminalIsOpen && !editorFocus && panelMaximized"
+    },
+// sides menus ctrl+b
+    {
+        // disable default rule
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        // if all visible, hide left bar
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+            "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        "when": "(terminalFocus || !terminalFocus || editorFocus || !editorFocus) && (sideBarVisible && auxiliaryBarVisible)"
+    },
+    {
+        // left visible and right hiden, hide right bar
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+            "workbench.action.toggleAuxiliaryBar"
+            ]
+        },
+        "when": "(terminalFocus || !terminalFocus || editorFocus || !editorFocus) && (!sideBarVisible && auxiliaryBarVisible)"
+    },
+    {
+        // if all hiden, show left bar
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+            "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        "when": "(terminalFocus || !terminalFocus || editorFocus || !editorFocus) && (!sideBarVisible && !auxiliaryBarVisible)"
+    },
+    {
+        // right visible and left hiden, show left bar
+        "key": "ctrl+b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.toggleAuxiliaryBar"
+            ]
+        },
+        "when": "(terminalFocus || !terminalFocus || editorFocus || !editorFocus) && (sideBarVisible && !auxiliaryBarVisible)"
+    },
+    {
+        "key": "ctrl+alt+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+// Split editor
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.splitEditor"
+            ]
+        },
+        "when": "(!terminalFocus || editorFocus)"
+    },
+    {
+        "key": "ctrl+alt+n",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.split"
+            ]
+        },
+        "when": "(terminalFocus || !editorFocus)"
+    },
+// full screen
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.toggleFullScreen"
+    }
+]

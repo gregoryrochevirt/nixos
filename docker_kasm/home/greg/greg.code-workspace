@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": "/home/greg/.vscode-server"
+        },
+        {
+            "path": "/home/greg/"
+        },
+        {
+            "path": "/opt/kasm/"
+        },
+        {
+            "path": "/nfs/docker/docker-secrets"
+        },
+        {
+            "path": "/nfs/docker/docker-volumes"
+        }
+    ]
+}
